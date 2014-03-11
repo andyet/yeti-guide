@@ -1,15 +1,15 @@
 # HTML Guide
 
-## [Comments and Sectioning](#comments-and-sectioning)
-## [HTML Quotation Marks](#html-quotation-marks)
-## [HTML Entities](#html-entities)
-## [Type Attributes](#type-attributes)
-## [Optional Tags](#optional-tags)
-## [Nested Tags](#nested-tags)
-## [Classes](#classes)
-## [Semantics](#semantics)
-## [Accessibility](#accessibility)
-## [HTML/Jade Boilerplate](#html/jade-boilerplate)
+* [Comments and Sectioning](#comments-and-sectioning)
+* [HTML Quotation Marks](#html-quotation-marks)
+* [HTML Entities](#html-entities)
+* [Type Attributes](#type-attributes)
+* [Optional Tags](#optional-tags)
+* [Nested Tags](#nested-tags)
+* [Classes](#classes)
+* [Semantics](#semantics)
+* [Accessibility](#accessibility)
+* [HTML/Jade Boilerplate](#html/jade-boilerplate)
 
 ## Comments and Sectioning
 When writing in pure HTML use comments after the closing tag of a major section:
@@ -45,7 +45,7 @@ This drastically improves the readability of code.
 Use double quotation marks for attribute values.
 
 ## HTML Entities
-Use custom characters instead of HTML entities, but be sure to have UTF-8 encoding set up (default in HTML boilerplate). To access the list of characters hit ⌘+⌃+Space (Command + Control + Space). This doesn't work in Sublime Text though (try Chrome or other apps input fields, hackpad, IM or others).
+Use custom characters instead of HTML entities, but be sure to have UTF-8 encoding set up (default in HTML boilerplate). To access the list of characters hit `⌘+⌃+Space` (Command + Control + Space). This doesn't work in Sublime Text though (try Chrome or other apps input fields, hackpad, IM or others).
 
 ## Type Attributes
 Omit type attributes in Javascript and CSS files (meaning no **text/css** and **text/javascript**):
