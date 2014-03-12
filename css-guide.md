@@ -15,7 +15,7 @@
 * [CSS Libraries and Code Snippets](#css-libraries-and-code-snippets)
 * [Style Framework](#style-framework)
 * [Stylus Resources and Libraries](#stylus-resources-and-libraries)
-* [Further Materials](#further-reading)
+* [Further Materials](#further-materials)
 
 ## General
 * use two spaces for indentation (here is how to set that up in: [Sublime Text](http://www.sublimetext.com/docs/2/indentation.html), [TextMate](http://manual.macromates.com/en/working_with_text) or [Emacs](http://www.emacswiki.org/emacs/NoTabs))
