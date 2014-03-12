@@ -15,7 +15,7 @@
 * [CSS Libraries and Code Snippets](#css-libraries-and-code-snippets)
 * [Style Framework](#style-framework)
 * [Stylus Resources and Libraries](#stylus-resources-and-libraries)
-* [Further Reading](#further-reading)
+* [Further Materials](#further-reading)
 
 ## General
 * use two spaces for indentation (here is how to set that up in: [Sublime Text](http://www.sublimetext.com/docs/2/indentation.html), [TextMate](http://manual.macromates.com/en/working_with_text) or [Emacs](http://www.emacswiki.org/emacs/NoTabs))
@@ -196,7 +196,7 @@ Style is a minimal framework created and maintained by @thefoxis. Its purpose is
 * [Jeet](https://github.com/mojotech/jeet) — an advanced grid system
 * [Platonic](https://github.com/davidpaulrosser/stylus-platonic) — a pure CSS 3D library
 
-## Further Reading
+## Further Materials
 
 * [Idiomatic CSS](https://github.com/necolas/idiomatic-css) by Nicolas Gallagher
 * [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines) by Harry Roberts
