@@ -9,7 +9,7 @@
 * [Classes](#classes)
 * [Semantics](#semantics)
 * [Accessibility](#accessibility)
-* [HTML/Jade Boilerplate](#html/jade-boilerplate)
+* [HTML/Jade Boilerplate](#htmljade-boilerplate)
 
 ## Comments and Sectioning
 When writing in pure HTML use comments after the closing tag of a major section:
