@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "building-static-server": "^1.0.0",
+    "cssmin": "^0.4.1",
     "glob-cli": "^1.0.0",
     "jade": "^1.5.0",
     "stylus": "^0.48.1",
@@ -20,7 +21,7 @@
     "url": "https://github.com/andyet/code-guide"
   },
   "scripts": {
-      "build": "make build",
-      "start": "building-static-server -p 8765"
+    "build": "make build",
+    "start": "building-static-server -p 8765"
   }
 }
