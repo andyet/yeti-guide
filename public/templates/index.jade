@@ -39,9 +39,9 @@ html(lang='en')
           h3 HTML
           nav(role='navigation')
             ul
-              li: a() Syntax
-              li: a() Encoding
-              li: a() Attributes
+              li: a(href='#html-syntax') Syntax
+              li: a(href='#encoding') Encoding
+              li: a(href='#attributes') Attributes
               li: a() Sectioning
               li: a() Tags
               li: a() Classes
@@ -76,6 +76,29 @@ html(lang='en')
 
                 link(rel='stylesheet', href='css/main.min.css')
             ```
+
+    section(id='encoding')
+      h3 Encoding
+      .grid-container-flex
+
+        .grid-flex-cell
+          p Use <code>UTF-8</code> encoding and custom characters instead of HTML entities. To access the list of characters hit <code>⌘+⌃+Space</code> (Command + Control + Space). This method of invoking special characters list might not work in certain apps, like Sublime Text, but will work in Chrome or IM.
+
+        .grid-flex-cell
+
+          :markdown
+            ```html
+             head
+                meta(charset='utf-8')
+                title from &yet ❤︎
+            ```
+
+    section(id='attributes')
+      h3 Attributes
+      .grid-container-flex
+
+        .grid-flex-cell
+        .grid-flex-cell
 
    footer(role='contentinfo')
       .container
