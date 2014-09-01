@@ -12,8 +12,36 @@ html(lang='en')
 
     link(rel='icon', type='image/png', href='img/favicon.png')
 
+    link(rel='stylesheet', href='//cloud.typography.com/7773252/674524/css/fonts.css')
     link(rel='stylesheet', href='/public/css/normalize.min.css')
-    link(rel='stylesheet', href='/public/css/main.min.css')
+    link(rel='stylesheet', href='/public/css/main.css')
 
   body
-    p Hello world!
+    header(role='banner')
+      .container
+        .cf
+          a(href='https://github.com/andyet/code-guide', title='See on Github', class='button button-primary pull-right') See on Github
+        h1 &yet Code Guide
+        p &yet's lightweight, modular pattern library written in Stylus.
+
+   footer(role='contentinfo')
+      .container
+        
+        nav(role='navigation')
+          ul.list-unstyled.list-inline
+            li: a(href='https://github.com/andyet/code-guide') Github
+            li: a(href='https://github.com/andyet/code-guide/releases') Releases
+            li: a(href='https://github.com/andyet/code-guide/blob/gh-pages/CONTRIBUTING.md') Contributing
+
+        p Designed and built by <a href='https://twitter.com/fox'>@fox</a>.
+        p Maintained with invaluable help of <a href='https://github.com/andyet/code-guide/graphs/contributors'>contributors</a>.
+
+        a(href='http://andyet.com/', class='logo')
+
+    script(src='public/js/highlight.pack.js')
+    script.
+      hljs.configure({
+        tabReplace: '  ',
+        classPrefix: ''
+      });
+      hljs.initHighlightingOnLoad();
