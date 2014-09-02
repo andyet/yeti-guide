@@ -389,9 +389,17 @@ body {
   border-style: solid;
   border-color: #f2f4f6;
 }
+header,
+section:not(:last-child),
+h2 {
+  border-bottom: 1px solid #f2f4f6;
+}
+h2 {
+  padding-bottom: 30px;
+  text-align: center;
+}
 header {
   padding-bottom: 30px;
-  border-bottom: 1px solid #f2f4f6;
 }
 header h1 {
   margin-bottom: 0;
@@ -401,6 +409,9 @@ header p {
 }
 header .button {
   margin: 30px 0;
+}
+.toc ul {
+  margin-bottom: 0;
 }
 ul li {
   padding-bottom: 5px;
@@ -437,9 +448,6 @@ footer[role='contentinfo'] .logo {
 }
 section {
   padding-top: 30px;
-}
-section:not(:last-child) {
-  border-bottom: 1px solid #f2f4f6;
 }
 @media screen and (min-width: 769px) {
   body {

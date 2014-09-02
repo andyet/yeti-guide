@@ -30,11 +30,23 @@ body
   border-style: solid
   border-color: lighten($gray-lighter, 50%)
 
+//- Borders
+
+header,
+section:not(:last-child),
+h2
+  border-bottom: 1px solid lighten($gray-lighter, 50%)
+
+//- Headings
+
+h2
+  padding-bottom: $ui-padding-extra-spaced
+  text-align: center
+
 //- Header
 
 header
   padding-bottom: $ui-padding-extra-spaced
-  border-bottom: 1px solid lighten($gray-lighter, 50%)
   
   h1
     margin-bottom: 0
@@ -46,6 +58,9 @@ header
     margin: $space 0
 
 //- Lists
+
+.toc ul
+  margin-bottom: 0
 
 ul li
   padding-bottom: 5px 
@@ -89,9 +104,6 @@ footer[role='contentinfo']
 
 section
   padding-top: $ui-padding-extra-spaced
-
-  &:not(:last-child)
-    border-bottom: 1px solid lighten($gray-lighter, 50%)
 
 @media screen and (min-width: $breakpoint-tablet+1)
   
