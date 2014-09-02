@@ -42,11 +42,9 @@ html(lang='en')
               li: a(href='#html-syntax') Syntax
               li: a(href='#encoding') Encoding
               li: a(href='#attributes') Attributes
-              li: a() Sectioning
-              li: a() Tags
-              li: a() Classes
-              li: a() Semantics
-              li: a() Accessibility
+              li: a(href='#tag-nesting') Tag Nesting
+              li: a(href='#class-chaining') Class Chaining
+              li: a(href='#semantics-and-accessibility') Semantics and Accessibility
 
         .grid-flex-cell
           h3 CSS
@@ -108,6 +106,75 @@ html(lang='en')
             link(rel='stylesheet', href='css/main.min.css')
             input(class='form-input', type='text', required)
             a(class='button', href='/', title='A buttton')
+            ```
+
+    section(id='tag-nesting')
+      h3 Tag Nesting
+
+      .grid-container-flex
+
+        .grid-flex-cell
+          p Complying with Jade syntax in some cases means extensive use of <a href='http://jade-lang.com/reference/plain-text/'>piping</a> to separate plain text from nested tags (like <code>em</code> or <code>strong</code>).
+          p To avoid unreadable and cumbersome markup use regular HTML tags.
+          p For regular nesting scenarios use indentation or <a href='http://jade-lang.com/reference/tags/'>block expansion</a>.
+
+        .grid-flex-cell
+
+          :markdown
+            ```html
+            // Regular nesting
+            ul 
+              li
+                a(href='#') Link
+              li: a(href='#') Link
+
+            // Good
+            p A paragraph with <strong>emphasized text.</strong>
+
+            // Bad
+            p 
+              | A paragraph with 
+              strong emphasized text.
+            ```
+
+    section(id='class-chaining')
+      h3 Class Chaining
+
+      .grid-container-flex
+
+        .grid-flex-cell
+          p Decide on one method of adding classes to elements. Using the class attribute is preferred. 
+
+        .grid-flex-cell
+
+          :markdown
+            ```html
+            // Good
+            a(class='list-item active', href='')
+            a.list-item.active(href='')
+
+            // Bad
+            a.list-item(class='active', href='')
+            ```
+
+    section(id='semantics-and-accessibility')
+      h3 Semantics and Accessibility
+
+      .grid-container-flex
+        .grid-flex-cell
+          p For structuring content make use of new HTML5 <a href='http://blog.teamtreehouse.com/use-html5-sectioning-elements'>sectioning elements</a>.
+
+          p Add basic <a href='http://alistapart.com/article/aria-and-progressive-enhancement/'>ARIA landmark roles</a> that increase accessibility by assigning meaning to specific areas of the page. Here's <a href='http://www.paciellogroup.com/blog/2013/02/using-wai-aria-landmarks-2013/'>a good rundown of roles</a> by Steve Faulkner. 
+        .grid-flex-cell
+
+          :markdown
+            ```html
+              header(role='banner')
+                h1 This is a website
+              main(role='main')
+                p Main content of my site
+              footer(role='contentinfo')
+                p © 2014
             ```
 
    footer(role='contentinfo')
