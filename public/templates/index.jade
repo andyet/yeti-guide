@@ -13,9 +13,9 @@ html(lang='en')
     link(rel='icon', type='image/png', href='/public/img/favicon.png')
 
     link(rel='stylesheet', href='//cloud.typography.com/7773252/674524/css/fonts.css')
-    link(rel='stylesheet', href='/public/css/normalize.min.css')
-    link(rel='stylesheet', href='/public/css/andlight.min.css')
-    link(rel='stylesheet', href='/public/css/main.min.css')
+    link(rel='stylesheet', href='public/css/normalize.min.css')
+    link(rel='stylesheet', href='public/css/andlight.min.css')
+    link(rel='stylesheet', href='public/css/main.min.css')
 
   body
     header(role='banner')
@@ -49,6 +49,17 @@ html(lang='en')
 
         .grid-flex-cell
           h3 CSS
+          nav(role='navigation')
+            ul
+              li: a(href='#css-syntax') Syntax
+              li: a(href='#preprocessing') Preprocessing
+              li: a(href='#declaration-order') Declaration Order
+              li: a(href='#units-and-colors') Units and Colors
+              li: a(href='#comments') Comments
+              li: a(href='#specificity') Specificity
+              li: a(href='#class-naming') Class Naming
+              li: a(href='#media-queries') Media Queries
+              li: a(href='#yeticss') Yeti.css
 
     section(id='html-syntax')
       h3 Syntax
