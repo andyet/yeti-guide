@@ -61,6 +61,7 @@ html(lang='en')
               li: a(href='#media-queries') Media Queries
               li: a(href='#yeticss') Yeti.css
 
+    h2 HTML
     section(id='html-syntax')
       h3 Syntax
       .grid-container-flex
@@ -192,6 +193,146 @@ html(lang='en')
     section(id='boilerplate')
       h3 Boilerplate
       p Feel free to use this bare-minimum and standard-compliant boilerplate as a starting point for templating → <a href='https://github.com/thefoxis/html-boilerplate/'>github.com/thefoxis/html-boilerplate</a>.
+
+    h2 CSS
+    section(id='#css-syntax')
+      h3 Syntax
+
+      .grid-container-flex
+        .grid-flex-cell
+          ul
+            li Use two spaces for indentation, as in Jade.
+            li Use colons after properties (despite Stylus allowing their omittance).
+            li Use a space to separate the colon from the property value.
+            li Fine tune your CSS vocabulary <a href='http://apps.workflower.fi/vocabs/css/en'>here</a>.
+
+        .grid-flex-cell
+
+          :markdown
+            ```html
+              .selector
+                property: value
+            ```
+
+    section(id='#preprocessing')
+      h3 Preprocessing
+      p We are using Stylus as a preprocessor of choice. <a href='http://learnboost.github.io/stylus/'>Go here for documentation</a>.
+
+      ul
+        li Store repeatable values in variables.
+        li Do not nest further than 3 levels deep.
+        li Be cautious of code repetitiveness when using <code>@extend</code> (consider using <code>%placeholder</code> where relevant). Read more about the extend concept <a href='http://css-tricks.com/the-extend-concept/'>here</a>.
+        li Use mixins and functions where necessary but don't overengineer it.
+
+    section(id='#declaration-order')
+      h3 Declaration Order
+
+      .grid-container-flex
+        .grid-flex-cell
+          p Put declarations in the following order:
+
+          ol
+            li Display and box model
+            li Positioning
+            li Typography
+            li Color
+            li Other
+
+          p See more examples on <a href='http://css-tricks.com/poll-results-how-do-you-order-your-css-properties/'>CSS Tricks</a>.
+
+        .grid-flex-cell
+
+          :markdown
+            ```css
+              .selector
+                display: block
+                width: 100px
+                height: 100px
+                position: absolute
+                top: 0
+                left: 0
+                font-family: sans-serif
+                line-height: 1.5
+                background: black
+                cursor: pointer
+            ```
+
+    section(id='#units-and-colors')
+      h3 Units and Colors
+
+      .grid-container-flex
+        .grid-flex-cell
+
+          ul
+            li Omit units after “0”.
+            li Omit leading “0”s in values (example: .5em not 0.5em).
+            li Use <a href='http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/'>unitless line heights</a>.
+            li Use pixels or rems for element sizing.
+            li Use pixels or rems for font sizes (introduction to both can be found <a href='http://snook.ca/archives/html_and_css/font-size-with-rem'>here</a>).
+
+        .grid-flex-cell
+
+          ul
+            li For same color variations use <a href='http://learnboost.github.io/stylus/docs/operators.html'>color operations</a>.
+            li Defer to hex/RGBA for one-time colors (if their usage is necessary).
+            li In case of hex use 3 character hexadecimal notation wherever possible (<code>#fff</code> not <code>#ffffff</code>).
+
+    section(id='#comments')
+      h3 Comments
+
+      .grid-container-flex
+        .grid-flex-cell
+          ul
+            li Include sectioning comments at the beginning of the file and anywhere else inside it if necessary.
+            li Prefix the section names with <code>$</code> for better searchability.
+            li For inline, local commenting use <code>//</code>
+
+        .grid-flex-cell
+          :markdown
+            ```css
+            /*---------------------------------------------
+            * $BUTTONS
+            ---------------------------------------------*/
+
+            // Comment
+            ```
+
+    section(id='#specificity')
+      h3 Specificity
+
+      p Specificity determines which CSS rule is applied by the browsers to a given element.
+      ul
+        li Use the least number of selectors required to style an element.
+        li Usage of classes is strongly recommended (unless there's a very good reason to use an id).
+        li Avoid using classes with type selectors (not <code>ul.item-list</code> but <code>.item-list</code>).
+
+    section(id='#class-naming')
+      h3 Class Naming
+
+      ul
+        li Use hyphens, not underscores or camelCase.
+        li If you are manipulating HTML elements with JavaScript, use either <code>data-*</code> attributes or <code>js-*</code> prefixed classes (e.g. <code>js-draggable</code>). Those classes are JavaScript specific, and shouldn't be used in stylesheets as a point of reference for styling. This separates the presentation layer and helps to avoid unnecessary confusion and errors in code execution if a class is accidentaly removed.
+        li Follow the rules of semantics - make classes descriptive and not reliable on appearance of the given element.
+
+      h5 More resources on class naming can be found here:
+      ul
+        li: a(href='http://css-tricks.com/semantic-class-names/') What Makes a Semantic Class Name
+        li: a(href='http://csswizardry.com/2010/08/semantics-and-sensibility/') Semantics and Sensibility
+        li: a(href='http://www.smashingmagazine.com/2013/08/20/semantic-css-with-intelligent-selectors/') Semantic CSS With Intelligent Selectors
+
+    section(id='#media-queries')
+      h3 Media Queries
+
+      p Put media queries at the end of the file, where the modified element was defined. Make sure styles affecting desktop resolutions are inside a media query as well, the only styles placed outside should be shared by all resolutions.
+
+    section(id='#yeti.css')
+      h3 Yeti.css
+      p Yeti.css is a pattern library consisting of lightweight, reusable modules. It has been built to reflect &yet's visual and branding guidelines.
+
+      ul
+        li: a(href='https://github.com/andyet/yeticss') Github
+        li: a(href='https://github.com/andyet/yeticss/releases') Releases
+        li: a(href='https://github.com/andyet/yeticss/issues') Issues 
 
    footer(role='contentinfo')
       .container

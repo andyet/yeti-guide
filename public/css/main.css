@@ -402,11 +402,8 @@ header p {
 header .button {
   margin: 30px 0;
 }
-ul {
-  margin-bottom: 0;
-}
 ul li {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 pre {
   margin-top: 0;
