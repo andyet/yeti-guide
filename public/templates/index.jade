@@ -195,7 +195,7 @@ html(lang='en')
       h3 Boilerplate
       p Feel free to use this bare-minimum and standard-compliant boilerplate as a starting point for templating → <a href='https://github.com/thefoxis/html-boilerplate/'>github.com/thefoxis/html-boilerplate</a>.
 
-    section(id='#css-syntax')
+    section(id='css-syntax')
       h2 CSS
       h3 Syntax
 
@@ -215,7 +215,7 @@ html(lang='en')
                 property: value
             ```
 
-    section(id='#preprocessing')
+    section(id='preprocessing')
       h3 Preprocessing
       p We are using Stylus as a preprocessor of choice. <a href='http://learnboost.github.io/stylus/'>Go here for documentation</a>.
 
@@ -225,7 +225,7 @@ html(lang='en')
         li Be cautious of code repetitiveness when using <code>@extend</code> (consider using <code>%placeholder</code> where relevant). Read more about the extend concept <a href='http://css-tricks.com/the-extend-concept/'>here</a>.
         li Use mixins and functions where necessary but don't overengineer it.
 
-    section(id='#declaration-order')
+    section(id='declaration-order')
       h3 Declaration Order
 
       .grid-container-flex
@@ -258,7 +258,7 @@ html(lang='en')
                 cursor: pointer
             ```
 
-    section(id='#units-and-colors')
+    section(id='units-and-colors')
       h3 Units and Colors
 
       .grid-container-flex
@@ -278,7 +278,7 @@ html(lang='en')
             li Defer to hex/RGBA for one-time colors (if their usage is necessary).
             li In case of hex use 3 character hexadecimal notation wherever possible (<code>#fff</code> not <code>#ffffff</code>).
 
-    section(id='#comments')
+    section(id='comments')
       h3 Comments
 
       .grid-container-flex
@@ -298,7 +298,7 @@ html(lang='en')
             // Comment
             ```
 
-    section(id='#specificity')
+    section(id='specificity')
       h3 Specificity
 
       p Specificity determines which CSS rule is applied by the browsers to a given element.
@@ -307,7 +307,7 @@ html(lang='en')
         li Usage of classes is strongly recommended (unless there's a very good reason to use an id).
         li Avoid using classes with type selectors (not <code>ul.item-list</code> but <code>.item-list</code>).
 
-    section(id='#class-naming')
+    section(id='class-naming')
       h3 Class Naming
 
       ul
@@ -321,12 +321,12 @@ html(lang='en')
         li: a(href='http://csswizardry.com/2010/08/semantics-and-sensibility/') Semantics and Sensibility
         li: a(href='http://www.smashingmagazine.com/2013/08/20/semantic-css-with-intelligent-selectors/') Semantic CSS With Intelligent Selectors
 
-    section(id='#media-queries')
+    section(id='media-queries')
       h3 Media Queries
 
       p Put media queries at the end of the file, where the modified element was defined. Make sure styles affecting desktop resolutions are inside a media query as well, the only styles placed outside should be shared by all resolutions.
 
-    section(id='#yeti.css')
+    section(id='yeticss')
       h3 Yeti.css
       p Yeti.css is a pattern library consisting of lightweight, reusable modules. It has been built to reflect &yet's visual and branding guidelines.
 
