@@ -29,12 +29,7 @@ p
   | A paragraph with 
   strong emphasized text.
 </code></pre>
-</div></div></section><section id="class-chaining"><h3>Class Chaining</h3><div class="grid-container-flex"><div class="grid-flex-cell"><p>Decide on one method of adding classes to elements. Using the class attribute is preferred. </p></div><div class="grid-flex-cell"><pre><code class="lang-html">// Good
-a(class=&#39;list-item active&#39;, href=&#39;&#39;)
-a.list-item.active(href=&#39;&#39;)
-
-// Bad
-a.list-item(class=&#39;active&#39;, href=&#39;&#39;)
+</div></div></section><section id="class-chaining"><h3>Class Chaining</h3><div class="grid-container-flex"><div class="grid-flex-cell"><p>Chain classes directly after the element.</p></div><div class="grid-flex-cell"><pre><code class="lang-html">a.list-item.active(href=&#39;&#39;)
 </code></pre>
 </div></div></section><section id="semantics-and-accessibility"><h3>Semantics and Accessibility</h3><div class="grid-container-flex"><div class="grid-flex-cell"><p>For structuring content make use of new HTML5 <a href='http://blog.teamtreehouse.com/use-html5-sectioning-elements'>sectioning elements</a>.</p><p>Add basic <a href='http://alistapart.com/article/aria-and-progressive-enhancement/'>ARIA landmark roles</a> that increase accessibility by assigning meaning to specific areas of the page. Here's <a href='http://www.paciellogroup.com/blog/2013/02/using-wai-aria-landmarks-2013/'>a good rundown of roles</a> by Steve Faulkner. </p></div><div class="grid-flex-cell"><pre><code class="lang-html">  header(role=&#39;banner&#39;)
     h1 This is a website

@@ -157,18 +157,13 @@ html(lang='en')
       .grid-container-flex
 
         .grid-flex-cell
-          p Decide on one method of adding classes to elements. Using the class attribute is preferred. 
+          p Chain classes directly after the element.
 
         .grid-flex-cell
 
           :markdown
             ```html
-            // Good
-            a(class='list-item active', href='')
             a.list-item.active(href='')
-
-            // Bad
-            a.list-item(class='active', href='')
             ```
 
     section(id='semantics-and-accessibility')
