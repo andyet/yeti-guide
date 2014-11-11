@@ -11,7 +11,7 @@
     "glob-cli": "^1.0.0",
     "jade": "^1.5.0",
     "stylus": "^0.48.1",
-    "yeticss": "^4.0.0",
+    "yeticss": "^4.1.6",
     "marked": "^0.3.2"
   },
   "homepage": "https://github.com/andyet/code-guide",
