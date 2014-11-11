@@ -13,7 +13,6 @@ html(lang='en')
     link(rel='icon', type='image/png', href='/public/img/favicon.png')
 
     link(rel='stylesheet', href='//cloud.typography.com/7773252/674524/css/fonts.css')
-    link(rel='stylesheet', href='public/css/normalize.min.css')
     link(rel='stylesheet', href='public/css/andlight.min.css')
     link(rel='stylesheet', href='public/css/main.min.css')
 
@@ -21,7 +20,7 @@ html(lang='en')
     header(role='banner')
       .container
         .cf
-          a(href='https://github.com/andyet/yeti-guide', title='See on Github', class='button button-primary pull-right') See on Github
+          a(href='https://github.com/andyet/yeti-guide', title='See on Github', class='button button pull-right') See on Github
         h1 &yet's Code Guide
         p Standards for writing sane and maintainable front-end systems
 
@@ -33,7 +32,7 @@ html(lang='en')
 
     section.toc
       h2 Table of Contents
-      .grid-container-flex
+      .grid-flex-container
 
         .grid-flex-cell
           h3 HTML
@@ -65,7 +64,7 @@ html(lang='en')
     section(id='html-syntax')
       h2 HTML
       h3 Syntax
-      .grid-container-flex
+      .grid-flex-container
 
         .grid-flex-cell
           ul
@@ -90,7 +89,7 @@ html(lang='en')
 
     section(id='encoding')
       h3 Encoding
-      .grid-container-flex
+      .grid-flex-container
 
         .grid-flex-cell
           p Use <code>UTF-8</code> encoding and custom characters instead of HTML entities. To access the list of characters hit <code>⌘+⌃+Space</code> (Command + Control + Space). This method of invoking special characters list might not work in certain apps like Sublime Text, but will work in Chrome or IM.
@@ -106,7 +105,7 @@ html(lang='en')
 
     section(id='attributes')
       h3 Attributes
-      .grid-container-flex
+      .grid-flex-container
 
         .grid-flex-cell
           ul
@@ -125,7 +124,7 @@ html(lang='en')
     section(id='tag-nesting')
       h3 Tag Nesting
 
-      .grid-container-flex
+      .grid-flex-container
 
         .grid-flex-cell
           p Complying with Jade syntax in some cases means extensive use of <a href='http://jade-lang.com/reference/plain-text/'>piping</a> to separate plain text from nested tags (like <code>em</code> or <code>strong</code>).
@@ -154,7 +153,7 @@ html(lang='en')
     section(id='class-chaining')
       h3 Class Chaining
 
-      .grid-container-flex
+      .grid-flex-container
 
         .grid-flex-cell
           p Chain classes directly after the element.
@@ -169,7 +168,7 @@ html(lang='en')
     section(id='semantics-and-accessibility')
       h3 Semantics and Accessibility
 
-      .grid-container-flex
+      .grid-flex-container
         .grid-flex-cell
           p For structuring content make use of new HTML5 <a href='http://blog.teamtreehouse.com/use-html5-sectioning-elements'>sectioning elements</a>.
 
@@ -194,7 +193,7 @@ html(lang='en')
       h2 CSS
       h3 Syntax
 
-      .grid-container-flex
+      .grid-flex-container
         .grid-flex-cell
           ul
             li Use two spaces for indentation, as in Jade.
@@ -223,7 +222,7 @@ html(lang='en')
     section(id='declaration-order')
       h3 Declaration Order
 
-      .grid-container-flex
+      .grid-flex-container
         .grid-flex-cell
           p Put declarations in the following order:
 
@@ -256,7 +255,7 @@ html(lang='en')
     section(id='units-and-colors')
       h3 Units and Colors
 
-      .grid-container-flex
+      .grid-flex-container
         .grid-flex-cell
 
           ul
@@ -276,7 +275,7 @@ html(lang='en')
     section(id='comments')
       h3 Comments
 
-      .grid-container-flex
+      .grid-flex-container
         .grid-flex-cell
           ul
             li Include sectioning comments at the beginning of the file and anywhere else inside it if necessary.
