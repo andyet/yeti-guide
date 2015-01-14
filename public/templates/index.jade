@@ -20,7 +20,7 @@ html(lang='en')
     header(role='banner')
       .container
         .cf
-          a(href='https://github.com/andyet/yeti-guide', title='See on Github', class='button button pull-right') See on Github
+          a.button.pull-right(href='https://github.com/andyet/yeti-guide', title='See on Github') See on Github
         h1 &yet's Code Guide
         p Standards for writing sane and maintainable front-end systems
 
@@ -58,7 +58,7 @@ html(lang='en')
               li: a(href='#class-naming') Class Naming
               li: a(href='#media-queries') Media Queries
 
-    section(id='html-syntax')
+    section#html-syntax
       h2 HTML
       h3 Syntax
       .grid-flex-container
@@ -84,7 +84,7 @@ html(lang='en')
                 link(rel='stylesheet', href='css/main.min.css')
             ```
 
-    section(id='encoding')
+    section#encoding
       h3 Encoding
       .grid-flex-container
 
@@ -100,7 +100,7 @@ html(lang='en')
                 title from &yet ❤︎
             ```
 
-    section(id='attributes')
+    section#attributes
       h3 Attributes
       .grid-flex-container
 
@@ -118,7 +118,7 @@ html(lang='en')
             a.button(href='/', title='A buttton')
             ```
 
-    section(id='tag-nesting')
+    section#tag-nesting
       h3 Tag Nesting
 
       .grid-flex-container
@@ -147,7 +147,7 @@ html(lang='en')
               strong emphasized text.
             ```
 
-    section(id='class-chaining')
+    section#class-chaining
       h3 Class Chaining
 
       .grid-flex-container
@@ -162,7 +162,7 @@ html(lang='en')
             a.list-item.active(href='')
             ```
 
-    section(id='semantics-and-accessibility')
+    section#semantics-and-accessibility
       h3 Semantics and Accessibility
 
       .grid-flex-container
@@ -182,11 +182,11 @@ html(lang='en')
                 p © 2015
             ```
 
-    section(id='boilerplate')
+    section#boilerplate
       h3 Boilerplate
       p Feel free to use a bare-minimum and standard-compliant boilerplate as a starting point for templating—<a href='https://github.com/thefoxis/html-boilerplate/'>see on Github</a>.
 
-    section(id='css-syntax')
+    section#css-syntax
       h2 CSS
       h3 Syntax
 
@@ -206,7 +206,7 @@ html(lang='en')
                 property: value
             ```
 
-    section(id='preprocessing')
+    section#preprocessing
       h3 Preprocessing
       p We are using Stylus as a preprocessor of choice. <a href='http://learnboost.github.io/stylus/'>Go here for documentation</a>.
 
@@ -216,7 +216,7 @@ html(lang='en')
         li Be cautious of code repetitiveness when using <code>@extend</code> (consider using <code>%placeholder</code> where relevant). Read more about the extend concept <a href='http://css-tricks.com/the-extend-concept/'>here</a>.
         li Use mixins and functions where necessary but don't overengineer it.
 
-    section(id='declaration-order')
+    section#declaration-order
       h3 Declaration Order
 
       .grid-flex-container
@@ -249,7 +249,7 @@ html(lang='en')
                 cursor: pointer
             ```
 
-    section(id='units-and-colors')
+    section#units-and-colors
       h3 Units and Colors
 
       .grid-flex-container
@@ -269,7 +269,7 @@ html(lang='en')
             li Defer to hex/RGBA for one-time colors (if their usage is necessary).
             li In case of hex use 3 character hexadecimal notation wherever possible (<code>#fff</code> not <code>#ffffff</code>).
 
-    section(id='comments')
+    section#comments
       h3 Comments
 
       .grid-flex-container
@@ -289,7 +289,7 @@ html(lang='en')
             // Comment
             ```
 
-    section(id='specificity')
+    section#specificity
       h3 Specificity
 
       p Specificity determines which CSS rule is applied by the browsers to a given element.
@@ -312,7 +312,7 @@ html(lang='en')
         li: a(href='http://csswizardry.com/2010/08/semantics-and-sensibility/') Semantics and Sensibility
         li: a(href='http://www.smashingmagazine.com/2013/08/20/semantic-css-with-intelligent-selectors/') Semantic CSS With Intelligent Selectors
 
-    section(id='media-queries')
+    section#media-queries
       h3 Media Queries
 
       p Put media queries at the end of the file, where the modified element was defined. Make sure styles affecting desktop resolutions are inside a media query as well, the only styles placed outside should be shared by all resolutions.

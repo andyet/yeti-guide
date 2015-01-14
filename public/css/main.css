@@ -247,7 +247,6 @@ img,
 iframe,
 video {
   max-width: 100%;
-  height: auto;
 }
 .button {
   display: inline-block;
@@ -258,6 +257,7 @@ video {
   text-align: center;
   cursor: pointer;
   background-color: #00b0e9;
+  -webkit-font-smoothing: antialiased;
   transition: all 0.3s ease-in;
   user-select: none;
   appearance: none;
@@ -423,6 +423,7 @@ pre {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
 }
 .grid-flex-cell {
@@ -528,6 +529,13 @@ h5,
 h6,
 strong {
   color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400;
 }
 h5,
@@ -556,9 +564,10 @@ blockquote {
   margin: 30px 0;
   padding: 0 15px;
   color: #828c8f;
-  font: italic 22px Sentinel SSm A, Sentinel SSm B, Georgia, Times, serif;
+  font: italic 16px/1.55 Sentinel SSm A, Sentinel SSm B, Georgia, Times, serif;
 }
-blockquote p {
+blockquote p:only-child,
+blockquote p:last-child {
   margin: 0;
 }
 blockquote footer {
@@ -571,6 +580,13 @@ blockquote footer:before {
 }
 .blockquote-centered {
   text-align: center;
+}
+.blockquote-medium {
+  font-size: 22px;
+}
+.blockquote-large {
+  font-size: 36px;
+  line-height: 1.3;
 }
 @media screen and (max-width: 899px) {
   h1 {
@@ -591,9 +607,8 @@ blockquote footer:before {
   h6 {
     font-size: 14px;
   }
-  h5,
-  h6 {
-    text-transform: uppercase;
+  .blockquote-large {
+    font-size: 32px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -692,5 +707,11 @@ section {
 @media screen and (max-width: 768px) {
   body {
     border-width: 5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    margin-top: 30px;
+    font-size: 30px;
   }
 }
