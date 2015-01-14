@@ -68,7 +68,7 @@ html(lang='en')
             li Use two spaces for indentation (here's how to set it up in <a href='http://www.sublimetext.com/docs/2/indentation.html'>Sublime Text</a>, <a href='http://manual.macromates.com/en/working_with_text'>Textmate</a> or <a href='http://www.emacswiki.org/emacs/NoTabs'>Emacs</a>). Nested elements should be indented once. 
             li Use single quotation marks for attributes.
             li Feel free to omit <a href='http://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#syntax-tag-omission'>optional tags</a> but mind the code's readability.
-            li Put spaces between major elements to improve readability (use your own judgement).
+            li Add empty lines between major elements to improve readability (use your own judgement).
 
         .grid-flex-cell
 
@@ -114,8 +114,8 @@ html(lang='en')
           :markdown
             ```html
             link(rel='stylesheet', href='css/main.min.css')
-            input(class='form-input', type='text', required)
-            a(class='button', href='/', title='A buttton')
+            input.form-input(type='text', required)
+            a.button(href='/', title='A buttton')
             ```
 
     section(id='tag-nesting')
@@ -138,10 +138,10 @@ html(lang='en')
                 a(href='#') Link
               li: a(href='#') Link
 
-            // Good
+            // Correct
             p A paragraph with <strong>emphasized text.</strong>
 
-            // Bad
+            // Incorrect
             p 
               | A paragraph with 
               strong emphasized text.
@@ -179,12 +179,12 @@ html(lang='en')
               main(role='main')
                 p Main content of my site
               footer(role='contentinfo')
-                p © 2014
+                p © 2015
             ```
 
     section(id='boilerplate')
       h3 Boilerplate
-      p Feel free to use this bare-minimum and standard-compliant boilerplate as a starting point for templating → <a href='https://github.com/thefoxis/html-boilerplate/'>github.com/thefoxis/html-boilerplate</a>.
+      p Feel free to use a bare-minimum and standard-compliant boilerplate as a starting point for templating—<a href='https://github.com/thefoxis/html-boilerplate/'>see on Github</a>.
 
     section(id='css-syntax')
       h2 CSS
@@ -304,7 +304,7 @@ html(lang='en')
       ul
         li Use hyphens, not underscores or camelCase.
         li If you are manipulating HTML elements with JavaScript, use either <code>data-*</code> attributes or <code>js-*</code> prefixed classes (e.g. <code>js-draggable</code>). Those classes are JavaScript specific, and shouldn't be used in stylesheets as a point of reference for styling. This separates the presentation layer and helps to avoid unnecessary confusion and errors in code execution if a class is accidentaly removed.
-        li Follow the rules of semantics - make classes descriptive and not reliable on appearance of the given element.
+        li Follow the rules of semantics—make classes descriptive and not reliable on appearance of the given element.
 
       h5 More resources on class naming can be found here:
       ul
@@ -319,7 +319,7 @@ html(lang='en')
 
     section
       h3 Acknowledgements
-      p This guide is a result of years of learning how to write good front-end. It wouldn't be possible without people who dedicated great amount of time and poured their hearts to educate others. Thank you.
+      p This guide is a result of years of learning how to write good front-end. It wouldn't be possible without people who dedicated a great amount of time and poured their hearts into spreading the knowledge. Thank you.
 
       h4 Further materials
       ul
