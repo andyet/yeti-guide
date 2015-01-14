@@ -26,11 +26,10 @@ html(lang='en')
 
   .container
 
-    section
+    section.toc
       h2 Introduction
       p This guide has been written with the purpose of empowering members of <a href='http://andyet.com/team'>&yet</a> to write better front-end systems in <a href='http://jade-lang.com/'>Jade</a> and <a href='http://learnboost.github.io/stylus/'>Stylus</a>. It follows standard CSS conventions but also introduces preferential choices of our team. Feel free to treat it as an inspiration for writing your own code guides.
 
-    section.toc
       h2 Table of Contents
       .grid-flex-container
 
@@ -58,8 +57,6 @@ html(lang='en')
               li: a(href='#specificity') Specificity
               li: a(href='#class-naming') Class Naming
               li: a(href='#media-queries') Media Queries
-              li: a(href='#yeticss') Yeti.css
-
 
     section(id='html-syntax')
       h2 HTML
@@ -319,15 +316,6 @@ html(lang='en')
       h3 Media Queries
 
       p Put media queries at the end of the file, where the modified element was defined. Make sure styles affecting desktop resolutions are inside a media query as well, the only styles placed outside should be shared by all resolutions.
-
-    section(id='yeticss')
-      h3 Yeti.css
-      p Yeti.css is a pattern library consisting of lightweight, reusable modules. It has been built to reflect &yet's visual and branding guidelines.
-
-      ul
-        li: a(href='https://github.com/andyet/yeticss') Github
-        li: a(href='https://github.com/andyet/yeticss/releases') Releases
-        li: a(href='https://github.com/andyet/yeticss/issues') Issues 
 
     section
       h3 Acknowledgements
