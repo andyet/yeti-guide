@@ -64,6 +64,7 @@ html(lang='en')
               li: a(href='#specificity') Specificity
               li: a(href='#class-naming') Class Naming
               li: a(href='#media-queries') Media Queries
+              li: a(href='#modularisation') Modularisation
 
     section#html-syntax
       h2 HTML
@@ -323,6 +324,24 @@ html(lang='en')
       h3 Media Queries
 
       p Put media queries at the end of the file, where the modified element was defined. Make sure styles affecting desktop resolutions are inside a media query as well, the only styles placed outside should be shared by all resolutions.
+
+    section#modularisation
+      h3 Modularisation
+
+      p 
+
+      :markdown
+        ```
+        └── styl
+            ├── globals
+            |   ├── _colors.styl
+            |   └── _variables.styl
+            ├── libraries
+            ├── components
+            └── templates
+                ├── globals
+                └── index.styl
+        ```
 
     section
       h3 Acknowledgements
