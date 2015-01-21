@@ -328,20 +328,32 @@ html(lang='en')
     section#modularisation
       h3 Modularisation
 
-      p 
+      p We are aiming towards building scalable and maintainable front-end systems, that are easy to pick up and contribute to even without prior knowledge of the codebase. That goal makes structure and architecture crucial. CSS should be divided into small, easily comprehensible modules that serve a single purpose (i.e. define reusable, standalone interface elements).
+
+      p Use the following structure:
 
       :markdown
         ```
         └── styl
             ├── globals
-            |   ├── _colors.styl
-            |   └── _variables.styl
+            │   ├── _variables.styl
+            │   ├── _helpers.styl
+            │   └── _colors.styl
             ├── libraries
-            ├── components
-            └── templates
-                ├── globals
-                └── index.styl
-        ```
+            ├── templates
+            │   ├── home.styl
+            └── components
+                ├── buttons.styl
+                ├── type.styl
+                ├── grid.styl
+                └── forms.styl
+      ```
+
+      ul
+        li <code>globals</code>&mdash;where global, reusable variables (such as fonts, colors, spacing) or helper classes go.
+        li <code>libraries</code>&mdash;where you can add external libraries, if written in Stylus (otherwise place the minified version in <code>public/css</code>)
+        li <code>templates</code>&mdash;optionally for styles corresponding to particular pages (shouldn't be necessary with well defined components)
+        li <code>components</code>&mdash;for storing standalone interface modules such as buttons, forms or grids.
 
     section
       h3 Acknowledgements
